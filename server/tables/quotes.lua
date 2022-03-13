@@ -90,9 +90,7 @@ local quotes = {
 	"'Sometimes, I dream of cheese.'	- Half-Life 2 Refugee",
 	"Gabe Newell is not the hero we wanted, but the hero we needed.",
 	"Bullet drop exists, people.",
-	"Rawr uwu cuties heh 	- Luc",
 	"Corey is stonki  - Alan the liar",
-	"Opinions on Puro?   - chez gr8r",  -- yes
 	"Your computer will restart outside of active hours to install updates	  -- Windows 11",
 	"Try a Mac		- Apple and Microsoft", -- not really but for the love of god try one
 }

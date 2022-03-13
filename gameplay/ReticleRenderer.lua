@@ -10,6 +10,7 @@ local module = {}
 
     There is a similar (alpha) experiment where we rewrite roblox's entire Rendering system to support multi-camera rendering (aka dual rendering)
     This will let us achieve scope systems similar to ones in Call of Duty: Warzone and Battlefield 2042.
+	Yet Phantom Forces achieves this better (also gui based)
 
     Last updated: 2/1/2022 by ThreeBytesAShy
 
@@ -18,7 +19,9 @@ local module = {}
 local msg = script.Parent.Parent.MenuSelectedGun
 local rs = game:GetService("RunService")
 local hud = script.Parent.Parent.Parent:WaitForChild("HUD")
-local ui = hud.ReticleRender.RenderCenter.RenderZone
+local ui = hud.ReticleRender.RenderCenter.RenderZone  -- set up like this so the ui only fits in a certain square
+
+-- Note to self: try to make it resize & reposition the sight to fit the actual sight
 
 local ret = nil
 local renderpart = nil
@@ -76,6 +79,7 @@ rs.RenderStepped:Connect(function()
 
             -- make slower in future, try to make less janky and limit the area it can go to as well
 			ret.Position = ret.Position:Lerp(UDim2.new(0,avgSub(sp.X,'X'),0,avgSub(sp.Y,"Y")),0.4)
+			-- needa update the git rep to include the boundary system lmao
 		end
 		
 	else 

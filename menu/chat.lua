@@ -7,6 +7,8 @@
     Pretty self explanitory
     Allows players to chat with other players in the same server
 
+	The server tips are pushed through the standard message event by the server
+
     Last updated 1/25/2022 by ThreeBytesAShy
 
 --]]
@@ -29,7 +31,7 @@ end
 
 function ftween(obj, info, to)
 
-    -- why do we do this JUST to return a tween? just add a boolean to the tween function     << cam this is from lucas lol
+    -- why do we do this JUST to return a tween? just add a boolean to the tween function  
     -- i dont think this even gets used lol
 
 	local ts = game:GetService("TweenService")

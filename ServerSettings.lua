@@ -17,7 +17,7 @@ local serverSettings = {
 		doVoting = true,
 		doVotingInStudio = false,  -- do voting in the editor? no lol
 		
-		vipServer = {
+		vipServer = {	-- use as rentable servers with CR
 			name = "Crane",
 			mode = "King of the Hill"
 		},
@@ -48,25 +48,32 @@ local serverSettings = {
 		
 		botsDifficulty = "easy",
 		
-		botsDefaultGun = {
+		botsDefaultGun = {	-- logichandler for bots will run this loadout if theres an error
 			gun = "M4A1",
-			category = "Assault"
+			category = "Assault",
+			attachments = {  -- Attachments for the gun. Set to zero to indicate default
+				"Reflex", -- sight
+				"Angled", -- grip
+				"Green",  -- laser
+				0,		  -- barrel
+				0		  -- other
+			}
 		},
 		
-		majorityUsesRecommended = true,
-		obeyCountdownFreezes = true,
+		majorityUsesRecommended = true,  -- the bot's gun is random. toggle for if the random is a higher chance to be the default gun rather than random
+		obeyCountdownFreezes = true,     -- disable bot pathfinding if theres a countdown which freezes players
 		
 		dedicateCpu = "client", -- what cpu does the pathfinding & animating  
         -- server allows for faster performance but lower framrates and sometimes high ping
         -- but client allows for faster ping and bot framerates, and small lag spikes when bots load
 		
-		multiplayerWithBots = false
+		multiplayerWithBots = false   -- singleplayer toggle
 		
 	},
 	
 	defaultMenuScenes = {
 		studio = "Dev",
-		player = "Office"
+		player = "Gray"
 	},
 	
 	defaultBullets = {

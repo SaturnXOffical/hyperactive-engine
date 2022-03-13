@@ -7,9 +7,9 @@ local quotes = {
 	"Your teamates are here to assist you in battle.",
 	"Go for the capture points, you'll get home faster",
 	"You can change your UI color theme and menu environment in the settings menu.",
-	--"TIP: Press Shift + L to enter cinematic mode",
+	--"TIP: Press Shift + L to enter cinematic mode",		STOLEN FROM PHANTOM FORCES LOLOLOLOLOLOLOL (sorry stylis)
 	"Hitting headshots grant you additional XP upon kill.",
-	--"TIP: Press E to spot enemy players that are in view",
+	--"TIP: Press E to spot enemy players that are in view",   STOLEN FROM PHANTOM FORCES LOLOLOLOLOLOLOL (sorry stylis)
 	"Need a random number? Here's one: "..tostring(math.random(1,999999)),
 	"Not entirely sure, but I think 2+2 equals the flavor of seeing the scent of a car battery",
 	"Yes",

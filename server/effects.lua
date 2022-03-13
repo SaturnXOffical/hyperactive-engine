@@ -51,7 +51,7 @@ game.ReplicatedStorage.Events.bulletHole.OnServerEvent:Connect(function(plr,rot)
 	
 	local sounds = hole.impact:GetChildren()
 	
-	local sfx = sounds[math.random(1,#sounds)]
+	local sfx = sounds[math.random(1,#sounds)]  -- people can hear it from inf distance, its a roblox engine error with folders. fix soon
 	sfx:Play()
 	
 	wait(.2)
