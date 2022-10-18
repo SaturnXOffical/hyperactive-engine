@@ -1,7 +1,8 @@
 
--- Quotes that get displayed on-screen at the start & end of matches
--- Thanks to Stylis Studios for coming/typing up most of these, the rest are pulled from online.
--- Some of which were typed up by staff at Saturn Developments
+
+
+
+-- thank you stylis studios for these quotes
 
 local quotes = {
 	"There were two kinds of strength. One was the strength that came with having something to protect. The other was the strength of having nothing to lose.",
@@ -90,7 +91,7 @@ local quotes = {
 	"'Sometimes, I dream of cheese.'	- Half-Life 2 Refugee",
 	"Gabe Newell is not the hero we wanted, but the hero we needed.",
 	"Bullet drop exists, people.",
-	"Corey is stonki  - Alan the liar",
+	--"Corey is stonki  - Alan the liar",
 	"Your computer will restart outside of active hours to install updates	  -- Windows 11",
 	"Try a Mac		- Apple and Microsoft", -- not really but for the love of god try one
 }
